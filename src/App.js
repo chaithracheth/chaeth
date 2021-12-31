@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+import Atlassian from './Atlassian';
 
 const A2 = {
     bounds: [167, 281],
@@ -38,7 +39,7 @@ const D5 = {
         <svg viewBox="0 0 135 281" version="1.1">
             <path
                 className="fill-2"
-                d="M67,22H0v200h67c37,0,67-30,67-67S104,22,67,22z"
+                d="M67,22H0v200h67c37,0,67-30,67-67S150,22,67,22z"
             />
         </svg>,
     ],
@@ -117,9 +118,12 @@ const ParallaxWord = () => (
     </div>
 );
 
+
 const App = () => (
     <ParallaxProvider>
         <Gradients />
+        <ParallaxWord />
+        <Atlassian />
         <ParallaxWord />
     </ParallaxProvider>
 );
