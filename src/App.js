@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import Atlassian from './Atlassian';
+import AnnualProductive from "./Component/AnnualProductive/AnnualProductive";
+import Meeting from "./Component/Meeting/Meeting";
 
 const A2 = {
     bounds: [167, 281],
@@ -125,6 +127,9 @@ const App = () => (
         <ParallaxWord />
         <Atlassian />
         <ParallaxWord />
+        <AnnualProductive />
+        <Atlassian/>
+        <Meeting />
     </ParallaxProvider>
 );
 
